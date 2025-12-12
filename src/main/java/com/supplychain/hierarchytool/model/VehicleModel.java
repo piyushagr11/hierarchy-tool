@@ -60,13 +60,17 @@ public class VehicleModel {
         this.id = id;
     }
 
-    @DisplayName
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @DisplayName
+    public String getDisplayName() {
+        return name + (year != null ? " (" + year + ")" : "");
     }
 
     public Brand getBrand() {
