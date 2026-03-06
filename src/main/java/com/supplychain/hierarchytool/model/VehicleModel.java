@@ -22,7 +22,7 @@ public class VehicleModel {
     private String name;
 
     @Column(nullable = false)
-    private Integer year;
+    private String year;
 
     @ManyToOne
     @JoinColumn(name = "brand_id", nullable = false)
@@ -89,11 +89,11 @@ public class VehicleModel {
         this.vehicleType = vehicleType;
     }
 
-    public Integer getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(Integer year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
